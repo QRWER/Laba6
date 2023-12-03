@@ -4,36 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f48c0a85-3aaf-4ffa-b256-ed54afe937ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/ArrayTabulatedFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/Function.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/FunctionPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/FunctionPointIndexOutOfBoundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/Functions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/InappropriateFunctionPointException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/LinkedListTabulatedFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/TabulatedFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/TabulatedFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/basic/Cos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/basic/Exp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/basic/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/basic/Sin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/basic/Tan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/basic/TrigonometricFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/meta/Composition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/meta/Mult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/meta/Power.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/meta/Scale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/meta/Shift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/meta/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threads/Task.java" afterDir="false" />
+    <list default="true" id="f48c0a85-3aaf-4ffa-b256-ed54afe937ad" name="Changes" comment="Laba6 1 task">
+      <change afterPath="$PROJECT_DIR$/src/threads/SimpleGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/threads/SimpleIntegrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/threads/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/threads/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +45,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mum50/IdeaProjects/Laba 6&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -84,8 +63,21 @@
       <option name="presentableId" value="Default" />
       <updated>1700652598522</updated>
       <workItem from="1700652599527" duration="4650000" />
-      <workItem from="1700659393470" duration="4199000" />
+      <workItem from="1700659393470" duration="4886000" />
+      <workItem from="1700814111025" duration="7000" />
+      <workItem from="1701543835796" duration="7000" />
+      <workItem from="1701543848782" duration="198000" />
+      <workItem from="1701544067035" duration="13000" />
     </task>
+    <task id="LOCAL-00001" summary="Laba6 1 task">
+      <option name="closed" value="true" />
+      <created>1700665908659</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700665908659</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,15 +85,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Laba6 1 task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laba6 1 task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/functions/Functions.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="16" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
