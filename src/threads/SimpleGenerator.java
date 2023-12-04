@@ -12,14 +12,20 @@ public class SimpleGenerator implements Runnable{
     }
 
     public void run() {
-        System.out.println("Generate");
         Random random = new Random();
         for(int i = 0; i<task.getCountOfTask(); i++){
-            task.setFunction(new Log(random.nextDouble(1, 10)));
-            task.setLeftBorder(random.nextDouble(0, 100));
-            task.setRightBorder(random.nextDouble(100, 200));
-            task.setStep(random.nextDouble(0, 1));
+            synchronized (task) {
+                task.setFunction(new Log(random.nextDouble(1, 10)));
+                task.setLeftBorder(random.nextDouble(0, 100));
+                task.setRightBorder(random.nextDouble(100, 200));
+                task.setStep(random.nextDouble(0, 1));
+            }
             System.out.println("Source: " + task.getLeftBorder() + ' ' + task.getRightBorder() + ' ' + task.getStep());
+            try {
+                Thread.sleep(5);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 

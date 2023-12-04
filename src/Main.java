@@ -1,8 +1,6 @@
 import functions.*;
 import functions.basic.*;
-import threads.SimpleGenerator;
-import threads.SimpleIntegrator;
-import threads.Task;
+import threads.*;
 
 import java.io.*;
 import java.util.Arrays;
@@ -26,16 +24,33 @@ public class Main {
         }
     }
 
-    public static void simpleThreads(){
+    public static void simpleThreads() {
         Random random = new Random();
-        Task task = new Task(random.nextInt(1, 10));
+        Task task = new Task(random.nextInt(100, 200));
         Thread thread1 = new Thread(new SimpleGenerator(task));
-        thread1.start();
         Thread thread2 = new Thread(new SimpleIntegrator(task));
+        thread1.start();
         thread2.start();
     }
 
-    public static void main(String[] args) {
-        simpleThreads();
+    public static void complicatedThreads(){
+        Random random = new Random();
+        Semaphore semaphore = new Semaphore();
+        Task task = new Task(random.nextInt(100, 500));
+        Thread thread1 = new Generator(task, semaphore);
+        Thread thread2 = new Integrator(task, semaphore);
+        thread1.start();
+        thread2.start();
+        try {
+            Thread.sleep(50);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        thread1.interrupt();
+        thread2.interrupt();
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println(Functions.integrate(new Log(0.86), 73.83, 189, 1));
     }
 }

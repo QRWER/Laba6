@@ -9,11 +9,18 @@ public class SimpleIntegrator implements Runnable {
         this.task = task;
     }
 
-    public void run() {
-        System.out.println("Result");
-        for(int i = 0; i<task.getCountOfTask(); i++){
-            double result = task.getResult();
-            System.out.println("Result: " + task.getLeftBorder()+ ' ' + task.getRightBorder()+ ' ' + task.getStep() + ' ' + result);
+    public synchronized void run() {
+        for(int i = 0; i<task.getCountOfTask(); i++) {
+            try {
+                Thread.sleep(5);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            double result;
+            synchronized (task){
+                result = task.getResult();
+            }
+            System.out.println("Result: " + task.getLeftBorder() + ' ' + task.getRightBorder() + ' ' + task.getStep() + ' ' + result);
         }
     }
 }
