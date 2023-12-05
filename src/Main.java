@@ -41,16 +41,9 @@ public class Main {
         Thread thread2 = new Integrator(task, semaphore);
         thread1.start();
         thread2.start();
-        try {
-            Thread.sleep(50);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        thread1.interrupt();
-        thread2.interrupt();
     }
 
     public static void main(String[] args) throws InterruptedException {
-        System.out.println(Functions.integrate(new Log(0.86), 73.83, 189, 1));
+        complicatedThreads();
     }
 }
